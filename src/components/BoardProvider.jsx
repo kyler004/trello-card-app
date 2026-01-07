@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { USERS, INITIAL_COLUMNS, INITIAL_CARDS } from "../constants/index.js";
+import { BoardContext } from "../hooks/useBoardContext";
 
 const BoardProvider = ({ children }) => {
   const [columns, setColumns] = useState(INITIAL_COLUMNS);

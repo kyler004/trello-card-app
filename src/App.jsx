@@ -1,13 +1,15 @@
 import React from "react";
-import Card from "./components/Card";
+import BoardProvider from "./components/BoardProvider";
+import Board from "./components/Board";
 
 function App() {
-
   return (
     <div>
-      <Card />
+      <BoardProvider>
+        <Board />
+      </BoardProvider>
     </div>
-  ); 
+  );
 }
 
-export default App; 
+export default App;

@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useBoardContext } from "../hooks/useBoardContext";
 import Card from "./Card";
+import { Plus } from "lucide-react";
 
 const Column = ({ column, onOpenModal }) => {
   const { cards, addCard } = useBoardContext();
